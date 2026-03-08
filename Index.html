@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Téléchargements</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: grid;
+            gap: 16px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 20px;
+            text-decoration: none;
+            background: #f57c00;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: transform 0.15s ease, opacity 0.15s ease;
+        }
+
+            .btn:hover {
+                transform: translateY(-2px);
+                opacity: 0.95;
+            }
+
+        .footer {
+            margin-top: 18px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        @media (min-width: 700px) {
+            .buttons {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="banniere.jpg" alt="Image de présentation" class="hero-image">
+
+            <h1>Mes téléchargements</h1>
+            <p>Choisissez le fichier à télécharger.</p>
+
+            <div class="buttons">
+                <a class="btn" href="https://www.dropbox.com/scl/fi/xxxxx/Fichier1.pdf?rlkey=yyyyy&dl=1" download>
+                    Télécharger Fichier 1
+                </a>
+
+                <a class="btn" href="https://www.dropbox.com/scl/fi/xxxxx/Fichier2.zip?rlkey=yyyyy&dl=1" download>
+                    Télécharger Fichier 2
+                </a>
+
+                <a class="btn" href="https://www.dropbox.com/scl/fi/xxxxx/Fichier3.docx?rlkey=yyyyy&dl=1" download>
+                    Télécharger Fichier 3
+                </a>
+            </div>
+
+            <div class="footer">
+                © Votre nom ou votre projet
+            </div>
+        </div>
+    </div>
+</body>
+</html>
